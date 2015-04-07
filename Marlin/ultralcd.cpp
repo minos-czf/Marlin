@@ -706,12 +706,12 @@ static void lcd_move_menu_axis() {
     MENU_ITEM(submenu, MSG_MOVE_Z, lcd_move_z);
     MENU_ITEM(submenu, MSG_MOVE_E, lcd_move_e);
     #if EXTRUDERS > 1
-      MENU_ITEM(gcode, MSG_MOVE_SELECT_E0, PSTR("T0"));
-      MENU_ITEM(gcode, MSG_MOVE_SELECT_E1, PSTR("T1"));
+      MENU_ITEM(gcode, MSG_MOVE_SELECT_E MSG_H1, PSTR("T0"));
+      MENU_ITEM(gcode, MSG_MOVE_SELECT_E MSG_H2, PSTR("T1"));
       #if EXTRUDERS > 2
-          MENU_ITEM(gcode, MSG_MOVE_SELECT_E2, PSTR("T2"));
+          MENU_ITEM(gcode, MSG_MOVE_SELECT_E MSG_H3, PSTR("T2"));
         #if EXTRUDERS > 3
-          MENU_ITEM(gcode, MSG_MOVE_SELECT_E3, PSTR("T3"));
+          MENU_ITEM(gcode, MSG_MOVE_SELECT_E MSG_H4, PSTR("T3"));
         #endif //EXTRUDERS > 3
       #endif //EXTRUDERS > 2
     #endif //EXTRUDERS > 1
