@@ -120,17 +120,8 @@
 #ifndef MSG_MOVE_E
 #define MSG_MOVE_E                          "Extruder"
 #endif
-#ifndef MSG_MOVE_SELECT_E0
-#define MSG_MOVE_SELECT_E0                  "Select Extruder 0"
-#endif
-#ifndef MSG_MOVE_SELECT_E1
-#define MSG_MOVE_SELECT_E1                  "Select Extruder 1"
-#endif
-#ifndef MSG_MOVE_SELECT_E2
-#define MSG_MOVE_SELECT_E2                  "Select Extruder 2"
-#endif
-#ifndef MSG_MOVE_SELECT_E3
-#define MSG_MOVE_SELECT_E3                  "Select Extruder 3"
+#ifndef MSG_MOVE_SELECT_E
+#define MSG_MOVE_SELECT_E                   "Select Extruder"
 #endif
 #ifndef MSG_MOVE_01MM
 #define MSG_MOVE_01MM                       "Move 0.1mm"
